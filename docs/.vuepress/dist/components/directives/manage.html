@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指令统一管理 | 曾小曾的前端小站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/zxz/favicon.ico">
+    <meta name="description" content=" ">
+    <link rel="preload" href="/zxz/assets/css/0.styles.88aca36b.css" as="style"><link rel="preload" href="/zxz/assets/js/app.92503a3d.js" as="script"><link rel="preload" href="/zxz/assets/js/2.f08df1f8.js" as="script"><link rel="preload" href="/zxz/assets/js/26.1e4179bb.js" as="script"><link rel="prefetch" href="/zxz/assets/js/10.7a96103a.js"><link rel="prefetch" href="/zxz/assets/js/11.73c6b8eb.js"><link rel="prefetch" href="/zxz/assets/js/12.f12877c1.js"><link rel="prefetch" href="/zxz/assets/js/13.f067228c.js"><link rel="prefetch" href="/zxz/assets/js/14.7b206be0.js"><link rel="prefetch" href="/zxz/assets/js/15.b201925a.js"><link rel="prefetch" href="/zxz/assets/js/16.6d04c679.js"><link rel="prefetch" href="/zxz/assets/js/17.a9a15eaf.js"><link rel="prefetch" href="/zxz/assets/js/18.978623dd.js"><link rel="prefetch" href="/zxz/assets/js/19.93d33dda.js"><link rel="prefetch" href="/zxz/assets/js/20.5ead02f3.js"><link rel="prefetch" href="/zxz/assets/js/21.5e7348ab.js"><link rel="prefetch" href="/zxz/assets/js/22.10afa0aa.js"><link rel="prefetch" href="/zxz/assets/js/23.0e495dfc.js"><link rel="prefetch" href="/zxz/assets/js/24.dc34df21.js"><link rel="prefetch" href="/zxz/assets/js/25.a2eac0e5.js"><link rel="prefetch" href="/zxz/assets/js/27.70c587c7.js"><link rel="prefetch" href="/zxz/assets/js/28.f1a10345.js"><link rel="prefetch" href="/zxz/assets/js/29.3b211a85.js"><link rel="prefetch" href="/zxz/assets/js/3.8507ebb1.js"><link rel="prefetch" href="/zxz/assets/js/30.634a8e99.js"><link rel="prefetch" href="/zxz/assets/js/31.0bc75df9.js"><link rel="prefetch" href="/zxz/assets/js/32.79fa5310.js"><link rel="prefetch" href="/zxz/assets/js/33.3e502a98.js"><link rel="prefetch" href="/zxz/assets/js/34.05af0d7c.js"><link rel="prefetch" href="/zxz/assets/js/35.30bba2bd.js"><link rel="prefetch" href="/zxz/assets/js/36.24cda84f.js"><link rel="prefetch" href="/zxz/assets/js/37.d6f2aa9d.js"><link rel="prefetch" href="/zxz/assets/js/38.23812e8a.js"><link rel="prefetch" href="/zxz/assets/js/39.d76a3090.js"><link rel="prefetch" href="/zxz/assets/js/4.78d9e583.js"><link rel="prefetch" href="/zxz/assets/js/40.ff3d577d.js"><link rel="prefetch" href="/zxz/assets/js/41.1d1c5820.js"><link rel="prefetch" href="/zxz/assets/js/42.76c852b7.js"><link rel="prefetch" href="/zxz/assets/js/43.1b1b101a.js"><link rel="prefetch" href="/zxz/assets/js/44.dfaaad83.js"><link rel="prefetch" href="/zxz/assets/js/45.494d59fc.js"><link rel="prefetch" href="/zxz/assets/js/46.eeeec9d0.js"><link rel="prefetch" href="/zxz/assets/js/47.842028c9.js"><link rel="prefetch" href="/zxz/assets/js/48.efaff255.js"><link rel="prefetch" href="/zxz/assets/js/5.f1696d17.js"><link rel="prefetch" href="/zxz/assets/js/6.84a89b03.js"><link rel="prefetch" href="/zxz/assets/js/7.cb4465c4.js"><link rel="prefetch" href="/zxz/assets/js/8.35295575.js"><link rel="prefetch" href="/zxz/assets/js/9.6e22fe94.js">
+    <link rel="stylesheet" href="/zxz/assets/css/0.styles.88aca36b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zxz/" class="home-link router-link-active"><!----> <span class="site-name">曾小曾的前端小站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zxz/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="代码规范" class="dropdown-title"><span class="title">代码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="代码规范" class="mobile-dropdown-title"><span class="title">代码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/code/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/es6/" class="nav-link">
+  ECMAScript 6
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/experience/" class="nav-link">
+  体验性
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件化" class="dropdown-title"><span class="title">组件化</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件化" class="mobile-dropdown-title"><span class="title">组件化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/components/directives/" class="nav-link router-link-active">
+  指令
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/filters/" class="nav-link">
+  过滤器
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/utils/" class="nav-link">
+  工具库
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/css/" class="nav-link">
+  预处理语言
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/times/" class="nav-link">
+  日期工具函数
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/skills/" class="nav-link">
+  Vue开发技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实战" class="dropdown-title"><span class="title">实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="实战" class="mobile-dropdown-title"><span class="title">实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/projects/vue3.0/" class="nav-link">
+  Vue 3.0
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/h5/" class="nav-link">
+  H5支付
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/componentization/" class="nav-link">
+  组件化分享
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/uniApp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/unionpay/" class="nav-link">
+  云闪付小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/react/" class="nav-link">
+  React+Redux-saga
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/vue2.0/" class="nav-link">
+  Vue 2.0+Ts
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/jenkins/" class="nav-link">
+  Jenkins自动部署
+</a></li></ul></div></div><div class="nav-item"><a href="/zxz/tools/" class="nav-link">
+  工具库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zxz/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="代码规范" class="dropdown-title"><span class="title">代码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="代码规范" class="mobile-dropdown-title"><span class="title">代码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/code/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/es6/" class="nav-link">
+  ECMAScript 6
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/experience/" class="nav-link">
+  体验性
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件化" class="dropdown-title"><span class="title">组件化</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件化" class="mobile-dropdown-title"><span class="title">组件化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/components/directives/" class="nav-link router-link-active">
+  指令
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/filters/" class="nav-link">
+  过滤器
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/utils/" class="nav-link">
+  工具库
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/css/" class="nav-link">
+  预处理语言
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/times/" class="nav-link">
+  日期工具函数
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/skills/" class="nav-link">
+  Vue开发技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实战" class="dropdown-title"><span class="title">实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="实战" class="mobile-dropdown-title"><span class="title">实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/projects/vue3.0/" class="nav-link">
+  Vue 3.0
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/h5/" class="nav-link">
+  H5支付
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/componentization/" class="nav-link">
+  组件化分享
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/uniApp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/unionpay/" class="nav-link">
+  云闪付小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/react/" class="nav-link">
+  React+Redux-saga
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/vue2.0/" class="nav-link">
+  Vue 2.0+Ts
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/jenkins/" class="nav-link">
+  Jenkins自动部署
+</a></li></ul></div></div><div class="nav-item"><a href="/zxz/tools/" class="nav-link">
+  工具库
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zxz/components/directives/" aria-current="page" class="sidebar-link">指令的意义</a></li><li><a href="/zxz/components/directives/copy.html" class="sidebar-link">复制</a></li><li><a href="/zxz/components/directives/throttles.html" class="sidebar-link">整数</a></li><li><a href="/zxz/components/directives/debounces.html" class="sidebar-link">节流</a></li><li><a href="/zxz/components/directives/dialogDrag.html" class="sidebar-link">弹框拖拽</a></li><li><a href="/zxz/components/directives/waves.html" class="sidebar-link">按钮抖动</a></li><li><a href="/zxz/components/directives/inputFloat.html" class="sidebar-link">两位小数</a></li><li><a href="/zxz/components/directives/inputNumber.html" class="sidebar-link">整数</a></li><li><a href="/zxz/components/directives/waterMarker.html" class="sidebar-link">水印</a></li><li><a href="/zxz/components/directives/permission.html" class="sidebar-link">自定义权限指令</a></li><li><a href="/zxz/components/directives/emoji.html" class="sidebar-link">自定义权限指令</a></li><li><a href="/zxz/components/directives/longpress.html" class="sidebar-link">长按触发事件</a></li><li><a href="/zxz/components/directives/manage.html" aria-current="page" class="active sidebar-link">指令统一管理</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="指令统一管理"><a href="#指令统一管理" class="header-anchor">#</a> 指令统一管理</h3> <p>这么多的指令，总不可能一个一个在主入口文件去导入吧，那样太麻烦了，及时是作为工具函数也要在每个文件中单独去导入，综上，这些都是不合理的方式。
+对于指令来说，大都是在开发过程中引用频率比较高的，所以可以把它做成全局的，全局安装，只引用一次即可，这样在页面中哪里用到只要使用对应的指令即可。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> waves <span class="token keyword">from</span> <span class="token string">'./waves'</span>
+<span class="token keyword">import</span> debounces <span class="token keyword">from</span> <span class="token string">'./debounces'</span>
+<span class="token keyword">import</span> throttles <span class="token keyword">from</span> <span class="token string">'./throttles'</span>
+<span class="token operator">...</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  waves<span class="token punctuation">,</span>
+  debounces<span class="token punctuation">,</span>
+  throttles<span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>然后主入口文件引用</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> directives <span class="token keyword">from</span> <span class="token string">'./directive'</span>
+
+<span class="token comment">// 全局注册</span>
+Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>directives<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">k</span> <span class="token operator">=&gt;</span> Vue<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> directives<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="更多指令"><a href="#更多指令" class="header-anchor">#</a> 更多指令</h3> <p>等待补充......</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/6/2021, 10:03:24 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zxz/components/directives/longpress.html" class="prev">
+        长按触发事件
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zxz/assets/js/app.92503a3d.js" defer></script><script src="/zxz/assets/js/2.f08df1f8.js" defer></script><script src="/zxz/assets/js/26.1e4179bb.js" defer></script>
+  </body>
+</html>

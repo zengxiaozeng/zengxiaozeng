@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jenkins自动打包部署 | 曾小曾的前端小站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/zxz/favicon.ico">
+    <meta name="description" content=" ">
+    <link rel="preload" href="/zxz/assets/css/0.styles.88aca36b.css" as="style"><link rel="preload" href="/zxz/assets/js/app.92503a3d.js" as="script"><link rel="preload" href="/zxz/assets/js/2.f08df1f8.js" as="script"><link rel="preload" href="/zxz/assets/js/39.d76a3090.js" as="script"><link rel="prefetch" href="/zxz/assets/js/10.7a96103a.js"><link rel="prefetch" href="/zxz/assets/js/11.73c6b8eb.js"><link rel="prefetch" href="/zxz/assets/js/12.f12877c1.js"><link rel="prefetch" href="/zxz/assets/js/13.f067228c.js"><link rel="prefetch" href="/zxz/assets/js/14.7b206be0.js"><link rel="prefetch" href="/zxz/assets/js/15.b201925a.js"><link rel="prefetch" href="/zxz/assets/js/16.6d04c679.js"><link rel="prefetch" href="/zxz/assets/js/17.a9a15eaf.js"><link rel="prefetch" href="/zxz/assets/js/18.978623dd.js"><link rel="prefetch" href="/zxz/assets/js/19.93d33dda.js"><link rel="prefetch" href="/zxz/assets/js/20.5ead02f3.js"><link rel="prefetch" href="/zxz/assets/js/21.5e7348ab.js"><link rel="prefetch" href="/zxz/assets/js/22.10afa0aa.js"><link rel="prefetch" href="/zxz/assets/js/23.0e495dfc.js"><link rel="prefetch" href="/zxz/assets/js/24.dc34df21.js"><link rel="prefetch" href="/zxz/assets/js/25.a2eac0e5.js"><link rel="prefetch" href="/zxz/assets/js/26.1e4179bb.js"><link rel="prefetch" href="/zxz/assets/js/27.70c587c7.js"><link rel="prefetch" href="/zxz/assets/js/28.f1a10345.js"><link rel="prefetch" href="/zxz/assets/js/29.3b211a85.js"><link rel="prefetch" href="/zxz/assets/js/3.8507ebb1.js"><link rel="prefetch" href="/zxz/assets/js/30.634a8e99.js"><link rel="prefetch" href="/zxz/assets/js/31.0bc75df9.js"><link rel="prefetch" href="/zxz/assets/js/32.79fa5310.js"><link rel="prefetch" href="/zxz/assets/js/33.3e502a98.js"><link rel="prefetch" href="/zxz/assets/js/34.05af0d7c.js"><link rel="prefetch" href="/zxz/assets/js/35.30bba2bd.js"><link rel="prefetch" href="/zxz/assets/js/36.24cda84f.js"><link rel="prefetch" href="/zxz/assets/js/37.d6f2aa9d.js"><link rel="prefetch" href="/zxz/assets/js/38.23812e8a.js"><link rel="prefetch" href="/zxz/assets/js/4.78d9e583.js"><link rel="prefetch" href="/zxz/assets/js/40.ff3d577d.js"><link rel="prefetch" href="/zxz/assets/js/41.1d1c5820.js"><link rel="prefetch" href="/zxz/assets/js/42.76c852b7.js"><link rel="prefetch" href="/zxz/assets/js/43.1b1b101a.js"><link rel="prefetch" href="/zxz/assets/js/44.dfaaad83.js"><link rel="prefetch" href="/zxz/assets/js/45.494d59fc.js"><link rel="prefetch" href="/zxz/assets/js/46.eeeec9d0.js"><link rel="prefetch" href="/zxz/assets/js/47.842028c9.js"><link rel="prefetch" href="/zxz/assets/js/48.efaff255.js"><link rel="prefetch" href="/zxz/assets/js/5.f1696d17.js"><link rel="prefetch" href="/zxz/assets/js/6.84a89b03.js"><link rel="prefetch" href="/zxz/assets/js/7.cb4465c4.js"><link rel="prefetch" href="/zxz/assets/js/8.35295575.js"><link rel="prefetch" href="/zxz/assets/js/9.6e22fe94.js">
+    <link rel="stylesheet" href="/zxz/assets/css/0.styles.88aca36b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zxz/" class="home-link router-link-active"><!----> <span class="site-name">曾小曾的前端小站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zxz/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="代码规范" class="dropdown-title"><span class="title">代码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="代码规范" class="mobile-dropdown-title"><span class="title">代码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/code/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/es6/" class="nav-link">
+  ECMAScript 6
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/experience/" class="nav-link">
+  体验性
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件化" class="dropdown-title"><span class="title">组件化</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件化" class="mobile-dropdown-title"><span class="title">组件化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/components/directives/" class="nav-link">
+  指令
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/filters/" class="nav-link">
+  过滤器
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/utils/" class="nav-link">
+  工具库
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/css/" class="nav-link">
+  预处理语言
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/times/" class="nav-link">
+  日期工具函数
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/skills/" class="nav-link">
+  Vue开发技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实战" class="dropdown-title"><span class="title">实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="实战" class="mobile-dropdown-title"><span class="title">实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/projects/vue3.0/" class="nav-link">
+  Vue 3.0
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/h5/" class="nav-link">
+  H5支付
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/componentization/" class="nav-link">
+  组件化分享
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/uniApp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/unionpay/" class="nav-link">
+  云闪付小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/react/" class="nav-link">
+  React+Redux-saga
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/vue2.0/" class="nav-link">
+  Vue 2.0+Ts
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/jenkins/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Jenkins自动部署
+</a></li></ul></div></div><div class="nav-item"><a href="/zxz/tools/" class="nav-link">
+  工具库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zxz/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="代码规范" class="dropdown-title"><span class="title">代码规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="代码规范" class="mobile-dropdown-title"><span class="title">代码规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/code/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/es6/" class="nav-link">
+  ECMAScript 6
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/code/experience/" class="nav-link">
+  体验性
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件化" class="dropdown-title"><span class="title">组件化</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件化" class="mobile-dropdown-title"><span class="title">组件化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/components/directives/" class="nav-link">
+  指令
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/filters/" class="nav-link">
+  过滤器
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/utils/" class="nav-link">
+  工具库
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/css/" class="nav-link">
+  预处理语言
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/times/" class="nav-link">
+  日期工具函数
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/components/skills/" class="nav-link">
+  Vue开发技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实战" class="dropdown-title"><span class="title">实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="实战" class="mobile-dropdown-title"><span class="title">实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zxz/projects/vue3.0/" class="nav-link">
+  Vue 3.0
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/h5/" class="nav-link">
+  H5支付
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/componentization/" class="nav-link">
+  组件化分享
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/uniApp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/unionpay/" class="nav-link">
+  云闪付小程序
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/react/" class="nav-link">
+  React+Redux-saga
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/vue2.0/" class="nav-link">
+  Vue 2.0+Ts
+</a></li><li class="dropdown-item"><!----> <a href="/zxz/projects/jenkins/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Jenkins自动部署
+</a></li></ul></div></div><div class="nav-item"><a href="/zxz/tools/" class="nav-link">
+  工具库
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zxz/projects/jenkins/" aria-current="page" class="active sidebar-link">Jenkins自动打包部署</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="jenkins自动打包部署"><a href="#jenkins自动打包部署" class="header-anchor">#</a> Jenkins自动打包部署</h3> <h3 id="准备工作"><a href="#准备工作" class="header-anchor">#</a> 准备工作</h3> <p>熟悉<code>linux</code><a href="https://blog.csdn.net/tianzongnihao/article/details/80539264" target="_blank" rel="noopener noreferrer">基本操作命令<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>常用的命令得熟记，比如拷贝文件夹命令，删除文件命令，获取超级管理员权限命令，给文件夹设置权限命令，vi编辑、修改、保存命令...</p> <h3 id="jumpserver部署介绍"><a href="#jumpserver部署介绍" class="header-anchor">#</a> JumpServer部署介绍</h3> <p>在<code>jenkins</code>自动部署之前，先介绍一个手动的部署方式，对比<code>jenkins</code>配置，可以少很多的配置工作，直接打包拖拽到<code>JumpServer</code>对应的服务器上，优点就是快捷，少配置，只要熟悉基本文件的拷贝和删除命令就够用了，非常的灵活。缺点吗就是太灵活了，太灵活的东西如果不加以条条框框的限制，就容易出错。</p> <ul><li><code>Web终端</code></li></ul> <blockquote><p>cp -r dir1 dir2 // dir1: 源目录  dir2: 目标目录</p></blockquote> <p>本文我们的目标目录是在<code>/usr/local/nginx/webServer</code>，即所有的打包文件都存放在<code>/webServer</code>目录文件夹下</p> <p>除了<code>conf</code>文件是存放配置的目录，其它的文件夹都一一对应各个项目的打包配置，这里我们就要把对应的<code>test文件</code>拷贝到这个目录文件夹下即可。这里加了<code>sudo</code>命令，是为了防止命令行警告无权限的警告提示</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> /tmp
+<span class="token function">sudo</span> <span class="token function">cp</span> -r <span class="token builtin class-name">test</span> /usr/local/nginx/webServer
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这样我们就把<code>test</code>顺利拷贝到目标文件目录下了。</p> <p>接下来我们要做好<code>test</code>这个项目的配置文件，只是单单的把文件目录存放到<code>/webServer</code>是肯定不够的</p> <p>如上图的<code>/conf</code>配置文件目录，进入到这一层级目录中，看到对应的所有的<code>/webServer</code>下面的项目的<code>conf</code>文件配置。先查看一下其中的文件配置</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cat</span> 项目名.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/zxz/images/projects/jenkins/1621394174390.jpg" alt=""></p> <p>详细的配置介绍如上图，这里我们要新建一个<code>test.conf</code>文件，要改动的点就是图中的<code>端口号</code>，站点根目录地址<code>/usr/local/nginx/webServer/test</code>,<code>Nginx</code>服务端转发配置即可</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cp</span> -r 项目名.conf test.conf   // 拷贝项目名.conf到test.conf
+<span class="token function">vi</span> test.conf // 进入test配置文件的编辑模式，修改配置文件信息
+i           // 进入编辑环境
+esc         // 修改完后退出编辑环境
+:wq         // 保存退出
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这里我们要改的就是唯一的端口号设置和对应的目录地址，Nginx服务端地址转发配置可以参考图中格式修改即可。这里还有一项服务器地址名，<code>192.168.14.31</code>。这里跟之前的开发环境对应的目录名是一一对应的，所以我们不用管这个地方
+<img src="/zxz/images/projects/jenkins/1621394652923.jpg" alt=""></p> <p>到这里所有的配置就配置完成了。可以试着用刚才的域名和端口好在浏览器直接访问下<code>http://192.168.14.31:9191</code>,结果当然是...无法访问啦</p> <p>因为你修改了配置，服务器肯定要重启才行</p> <ul><li>重启服务器</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> /usr/local/nginx/sbin // Nginx服务器地址
+<span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> nginx // 查找Nginx地址
+<span class="token function">sudo</span> ./nginx -s reload  // Nginx服务器重启
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>重启命令后，这个时候再去访问刚才的域名就能够正确打开了，自此，手动配置服务器就完成了，是不是<code>so easy~</code></p> <h3 id="jenkins命令行配置"><a href="#jenkins命令行配置" class="header-anchor">#</a> jenkins命令行配置</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">##打包后的项目名 注意=号前后不能有空格</span>
+<span class="token assign-left variable">web_name</span><span class="token operator">=</span>test
+<span class="token comment">##打包后的项目地址</span>
+<span class="token assign-left variable">web_path</span><span class="token operator">=</span>/usr/local/nginx/webServer
+<span class="token comment">##目标服务器用户名和地址</span>
+<span class="token assign-left variable">web_address</span><span class="token operator">=</span>admin@192.168.x.x
+<span class="token comment">##打包后的压缩项目名</span>
+<span class="token assign-left variable">web_zip</span><span class="token operator">=</span>test
+
+<span class="token comment">##删除原有包</span>
+<span class="token function">rm</span> -rf <span class="token variable">${web_zip}</span>
+<span class="token comment">##安装相关依赖模块</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token comment">##编译包</span>
+<span class="token function">npm</span> run build
+<span class="token comment">##删除原来位置前端包</span>
+ansible <span class="token variable">${web_address}</span> -m shell -a <span class="token string">'rm -rf '</span><span class="token variable">${web_path}</span><span class="token string">'/'</span><span class="token variable">${web_name}</span>
+ansible <span class="token variable">${web_address}</span> -m shell -a <span class="token string">'rm -rf '</span><span class="token variable">${web_path}</span><span class="token string">'/'</span><span class="token variable">${web_zip}</span><span class="token string">'.zip'</span>
+<span class="token comment">##推送前端包到指定目录</span>
+<span class="token function">scp</span> -r <span class="token variable">${web_zip}</span> <span class="token variable">${web_address}</span><span class="token builtin class-name">:</span><span class="token variable">${web_path}</span>
+<span class="token comment">##修改项目权限</span>
+ansible <span class="token variable">${web_address}</span> -m <span class="token builtin class-name">command</span> -a <span class="token string">'chmod -R 775 '</span><span class="token variable">${web_path}</span><span class="token string">'/'</span><span class="token variable">${web_name}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>好了，然后就可以直接运行构建命令了。构建过程中如果有任何错误都会显示在控制台上，我们可以从项目配置首页栏目的<code>构建历史模块</code>进入查看构建进度。只有这一栏是蓝色的小标签就证明构建成功，灰色的代表构建中途取消，红色的代表构建失败。</p> <p>失败的话可以点进去查看下失败的原因解释，再做出配置里面的对应调整</p> <p><img src="/zxz/images/projects/jenkins/1621408819636.jpg" alt=""></p> <p><img src="/zxz/images/projects/jenkins/1621408863530.jpg" alt=""></p> <p>完毕，收工~快拿你的新项目练练手吧。</p> <h3 id="最后"><a href="#最后" class="header-anchor">#</a> 最后</h3> <p>自从学会了自动打包部署，新项目到了提测阶段后再也不用到处求人去部署环境，去修改配置服务端Nginx代理，自己动手，丰衣足食。</p> <p>最后的最后，所有的git提测分支，都是要先提交之后再构建的。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/19/2021, 3:44:19 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/zxz/assets/js/app.92503a3d.js" defer></script><script src="/zxz/assets/js/2.f08df1f8.js" defer></script><script src="/zxz/assets/js/39.d76a3090.js" defer></script>
+  </body>
+</html>
